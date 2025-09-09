@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Online Chess</title>
+<link rel="stylesheet" href="style.css">
+<!-- chessboard.js CSS (we'll use simple CDN version) -->
+<link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/www/css/chessboard.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Chess</h1>
+    <div class="controls">
+      <button id="createBtn">Create Room</button>
+      <input id="roomInput" placeholder="Room ID (join)" />
+      <button id="joinBtn">Join Room</button>
+      <span id="roomLabel"></span>
+    </div>
+
+    <div class="board-wrap">
+      <div id="board" style="width: 360px"></div>
+      <div class="info">
+        <div>Color: <span id="myColor">—</span></div>
+        <div>Turn: <span id="turn">—</span></div>
+        <div id="status"></div>
+      </div>
+    </div>
+
+    <div class="moves">
+      <h3>Moves</h3>
+      <ol id="movesList"></ol>
+    </div>
+    <div class="footer">Tip: create a room and share Room ID with friend.</div>
+  </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://unpkg.com/chess.js@1.0.0/chess.js"></script>
+<script src="https://unpkg.com/chessboardjs@1.0.0/www/js/chessboard.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

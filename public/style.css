@@ -1,0 +1,31 @@
+body{font-family:system-ui,Arial;background:#0b1220;color:#eaf2f8;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
+.container{width:95%;max-width:900px;padding:16px}
+.controls{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+#roomInput{padding:6px;border-radius:6px;border:1px solid #334}
+.board-wrap{display:flex;gap:16px;align-items:flex-start}
+.info{font-size:14px}
+.moves{margin-top:12px}
+.footer{margin-top:10px;opacity:0.8}
+/* Telefonlar uchun */
+@media (max-width: 600px) {
+  #board {
+    width: 95vw;
+    height: 95vw;
+  }
+}
+
+/* Planshet uchun */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #board {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+/* Kompyuter uchun */
+@media (min-width: 1025px) {
+  #board {
+    width: 500px;
+    height: 500px;
+  }
+}
