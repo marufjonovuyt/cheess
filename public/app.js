@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://cheess.onrender.com");
 let board = null;
 let game = null;
 let myColor = null;
